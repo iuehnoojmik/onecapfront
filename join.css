@@ -1,0 +1,72 @@
+body{
+    margin:0;
+    color:#6a6f8c;
+    background:white;
+    font:600 16px/18px 'Open Sans',sans-serif;
+}
+
+.join_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.join_logo{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.mail_id{ /*이메일 입력란*/
+    width:500px;
+    height:45px;
+    margin: 10px 0 5px 0;
+    color:black;
+    background-color: #e8f0fe;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 15px;
+}
+
+.password{ /*비밀번호 입력란*/
+    width:500px;
+    height:45px;
+    margin: 10px 0 5px 0;
+    color:black;
+    background-color: #e8f0fe;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 15px;
+}
+
+.name{ /*이름 입력란*/
+    width:300px;
+    height:40px;
+    margin: 10px 0 5px 0;
+    color:black;
+    background-color: F2F2F2;
+    border: 5px line grey;
+    font-size: 15px;
+}
+
+.join_button_group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.join_btn{ /*회원가입 버튼*/
+    width:150px;
+    height:45px;
+    margin: 10px 0 5px 5px;
+    color:white;
+    background-color: #0D6EFD;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>프로젝트 등록</title>
+    <link href="projectregister.css" rel="stylesheet">
+</head>
+<body>
+    <div class="prj_wrapper">
+        <form class="prj_form">
+           <div class="prj_logo">프로젝트 등록</div> <br><br>
+           <label for="title">주제</label> 
+           <input type="text" class="prj_title" id="title">
+           <br>
+
+           <div class="invnite_member">
+            <div class="invite_logo">팀원 초대</div><br>
+            <label for="mail">이메일</label> 
+            <br>
+            <input type="email" class="mail_id" id="mail">
+            <br><br>
+            <label for="password">비밀번호 </label> 
+            <br>
+            <input type="password" class="password" id="password"> 
+           </div>
+          
+           <br><br>
+          <div class="login_button_group">
+            <input type="button" class="login_btn" value="로그인" onclick="check(this.form);"> 
+            <a href="join.html"><input type="button" class="join_btn" value="회원가입"></a>
+          </div>        
+        </form>
+     </div>
+<script src="one.js" ></script>     
+</body>
+</html> 
