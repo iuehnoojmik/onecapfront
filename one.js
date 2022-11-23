@@ -22,7 +22,7 @@ function check(form)
 
 function join_check(form)
 {
-    const Data= { // Body에 첨부할 json 데이터
+    var Data= { // Body에 첨부할 json 데이터
         "email" : form.mail.value,
         "password" : form.password.value,
         "username": form.name.value
@@ -41,7 +41,7 @@ function join_check(form)
         },
 
         error:function(e){
-            alert("통신에러");
+            alert("에러");
         }
     })
     
