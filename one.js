@@ -22,28 +22,33 @@ function check(form)
 
 function join_check(form)
 {
-    let Data= { // Body에 첨부할 json 데이터
-        "email" : $(form.email.value),
-        "password" : $(form.password.value),
-        "username": $(form.username.value)
-    };  
+    const email = document.getElementById("mail").value;
+    const password = document.getElementById("password").value;
+    const username = document.getElementById("name").value;
 
-    $.ajax({
-        url: $address+'/signup',
-        data:JSON.stringify(Data),
-        type:"POST",
-        async:true,
-        dataType:"JSON",
-        contentType: "application/json; charset=utf-8",
+	//보낼 데이터를 Json문자열로 변환
+    data = JSON.stringify({
+        email: email,
+        password: password,
+        username: username
+    });
 
-        success:function(response){
-            console.log(response);
-        },
-
-        error:function(e){
-            alert("에러");
+    var xhr = new XMLHttpRequest(); // XMLHttpRequest 객체 생성
+    //요청을 보낼 방식, 주소, 비동기 여부 설정
+    xhr.open("POST", "http://ec2-43-201-47-225.ap-northeast-2.compute.amazonaws.com/signup", true);
+    //요청 해더에 컨텐츠 타입 Json으로 사전 정의
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === xhr.DONE) {
+            if (xhr.status === 200) { // 200은 에러가 없다는 뜻
+                console.log("연결 성공");
+            } else {
+                console.log("연결 실패");
+            }
         }
-    })
+    }
+    //Json형식의 data를 포함하여 요청 전송
+    xhr.send(data);
     
 
     /*if(form.mail.value=="") //아이디 데이터베이스랑 연결해야하는데 할 줄 몰라요
