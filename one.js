@@ -1,26 +1,33 @@
 const $address = 'http://ec2-43-201-47-225.ap-northeast-2.compute.amazonaws.com'
-function check(form)
+function login(form)
 {
-    //ajax실행시키고 받은 값을 bad/ok
-    if(form.mail.value=="onecap@cbnu.com") //아이디 입력 바꾸기
-    {
-        if(form.password.value=="1111") //패스워드 입력 바꾸기
-        {
-            window.open('Home.html')
+    const email = document.getElementById("mail").value;
+    const password = document.getElementById("password").value;
+
+    data = JSON.stringify({
+        email: email,
+        password: password,
+    });
+
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", $address+'/login', true); 
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === xhr.DONE) {
+            if (xhr.status === 200) { 
+                window.open('Home.html');
+
+            }
+            else {
+                alert("아이디 또는 비밀번호를 다시 확인하시오.")
+            }
         }
-        else
-        {
-            alert("Wrong Password");
-        }
-        
     }
-    else{
-        alert("Wrong Email(ID)");
-    }
+    xhr.send(data);
 }
 
 
-function join_check(form)
+function signup(form)
 {
     const email = document.getElementById("mail").value;
     const password = document.getElementById("password").value;
