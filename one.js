@@ -1,4 +1,4 @@
-const $address = 'ec2-43-201-47-225.ap-northeast-2.compute.amazonaws.com'
+const $address = 'http://ec2-43-201-47-225.ap-northeast-2.compute.amazonaws.com'
 function check(form)
 {
     //ajax실행시키고 받은 값을 bad/ok
@@ -22,14 +22,14 @@ function check(form)
 
 function join_check(form)
 {
-    var Data= { // Body에 첨부할 json 데이터
-        "email" : form.mail.value,
-        "password" : form.password.value,
-        "username": form.name.value
+    let Data= { // Body에 첨부할 json 데이터
+        "email" : $(form.email.value),
+        "password" : $(form.password.value),
+        "username": $(form.username.value)
     };  
 
     $.ajax({
-        url: 'http://'+$address+'/signup',
+        url: $address+'/signup',
         data:JSON.stringify(Data),
         type:"POST",
         async:true,

@@ -10,18 +10,22 @@
     <div class="join_wrapper">
         <form class="join_form">
             <div class="join_logo">DevTask 회원가입</div> <br><br><br>
+
             <label for="mail">이메일(아이디)</label> 
             <br>
-            <input type="email" class="mail_id" id="mail">
+            <input name="email" type="email" class="mail_id" id="mail">
             <br><br>
+
             <label for="password">비밀번호 </label> 
             <br>
-            <input type="password" class="password" id="password"> 
+            <input name="password" type="password" class="password" id="password"> 
             <br><br>
+
             <label for="name">이름 </label> 
             <br>
-            <input type="text" class="name" id="name"> 
+            <input name="username" type="text" class="name" id="name"> 
             <br><br>
+
            <div class="join_button_group">
              <input type="button" class="join_btn" value="회원가입" onclick="join_check(this.form);"> 
            </div>        
