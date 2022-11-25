@@ -70,8 +70,22 @@ input[id="menuicon"]:checked + label + div {left:0;}
 a {
 	text-decoration-line: none;
 	color: rgb(0, 0, 0);
-	font-weight: 600;
+	font-weight: 400;
     font-size: 30px;
+    padding-right: 200px;
+    padding-left: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    background: transparent;
+    box-shadow: inset 0px 0px 0px #999;
+    display: block;
+    -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+    transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+}
+
+a:hover, a:active {
+    box-shadow: inset 300px 0px 0px #999;
 }
 
 
