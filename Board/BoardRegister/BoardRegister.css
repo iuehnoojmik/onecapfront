@@ -9,10 +9,11 @@ h1 {
 
 hr {
     margin-left: 300px;
-    margin-right: 300px;
+    margin-right: 500px;
 }
 
 .app {
+    position: relative;
     display: inline-block;
     justify-content: center;
 }
@@ -27,7 +28,8 @@ input {
     border: 0px;
 }
 .task {
-    margin-left: 450px;
+   margin-left: 450px;
+    
 }
 
 .score {
@@ -69,13 +71,10 @@ input[id="menuicon"]:checked + label + div {left:0;}
 a {
 	text-decoration-line: none;
 	color: rgb(0, 0, 0);
-	font-weight: 1000;
+	font-weight: 600;
     font-size: 30px;
 }
 
-a :hover {
-    background-color: #6593ee;
-}
 
 input[type=checkbox] {
     height: 0;
