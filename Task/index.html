@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Drag n Drop</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="main.css" />
+</head>
+<body>
+	<div class="app">
+		<header>
+			<div class="category">
+				<input type="checkbox" id="menuicon">
+				<label for="menuicon">
+					<span></span>
+					<span></span>
+					<span></span>
+				</label>
+				<div class="sidebar">
+					<ul class="sitemap-ul">
+						<li><a href="#">Board</a></li>
+						<li><a href="#">Task</a></li>
+						<li><a href="#">Issue</a></li>
+					</ul>
+				</div>
+			</div>
+			<h1>DevTask</h1>
+		</header>
+		<div class="lists">
+			<section class="ToDo">
+				<h2>해야할 일</h2>
+					<div class="list">
+						<div class="list-item" draggable="true">로그인 구현하기</div>
+						<div class="list-item" draggable="true">버튼 추가</div>
+						<div class="list-item" draggable="true">회원 정보 수정 가능</div>
+					</div>
+			</section>
+			
+			<section class="DoNow">
+				<h2>하는 중</h2>
+					<div class="list"></div>
+			</section>
+
+			<section class="End">
+				<h2>완료</h2>
+					<div class="list"></div>
+			</section>
+		</div>
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>

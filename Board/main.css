@@ -1,0 +1,221 @@
+h1 {
+    display: flex;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 50px;
+    font-weight: 700;
+    justify-content: center;
+    font-size: 50px;
+}
+
+hr {
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.app {
+    display: inline-block;
+    justify-content: center;
+}
+
+input {
+    font-family: 'Nunito', sans-serif;
+    background-color: rgba(0, 0, 0, 0.1);
+    width:800px;
+    height:50px;
+    font-size:20px;
+    border-radius: 5px;
+    border: 0px;
+}
+.task {
+    margin-left: 450px;
+}
+
+.score {
+    margin-left: 450px;
+}
+
+.importance {
+    margin-left: 450px;
+}
+
+p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+
+.clicked {
+    color: #6593ee;
+}
+
+
+input[id="menuicon"] {display:none;}
+input[id="menuicon"] + label {display:block;margin:10px;width:60px;height:50px;position:relative;cursor:pointer;}
+input[id="menuicon"] + label span {display:block;position:absolute;width:100%;height:5px;border-radius:30px;background:#000;transition:all .35s;}
+input[id="menuicon"] + label span:nth-child(1) {top:0;}
+input[id="menuicon"] + label span:nth-child(2) {top:50%;transform:translateY(-50%);}
+input[id="menuicon"] + label span:nth-child(3) {bottom:0;}
+input[id="menuicon"]:checked + label {z-index:2;}
+input[id="menuicon"]:checked + label span {background:rgb(0, 0, 0);}
+input[id="menuicon"]:checked + label span:nth-child(1) {top:50%;transform:translateY(-50%) rotate(45deg);}
+input[id="menuicon"]:checked + label span:nth-child(2) {opacity:0;}
+input[id="menuicon"]:checked + label span:nth-child(3) {bottom:50%;transform:translateY(50%) rotate(-45deg);}
+div[class="sidebar"] {width:250px;height:100%;background:rgba(0, 0, 0, 0.1);position:fixed;top:0;left:-250px;z-index:1;transition:all .35s;}
+input[id="menuicon"]:checked + label + div {left:0;}
+.sitemap-ul {margin-top: 300px;}
+.sitemap-ul > li {font-size:30px; width:100px; margin:100px auto; margin-top: 50px; list-style:none; font-family: 'Nunito', sans-serif;}
+
+a {
+	text-decoration-line: none;
+	color: rgb(0, 0, 0);
+	font-weight: 1000;
+    font-size: 30px;
+}
+
+a :hover {
+    background-color: #6593ee;
+}
+
+input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+input[type=checkbox]:checked + label:after {
+    transform: scale(4.2);
+}
+
+.score label {
+    outline: none;
+    user-select: none;
+    color: #000;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    letter-spacing: 0.04rem;
+    padding: 5px 20px;
+    cursor: pointer;
+    border-radius: 0.4rem;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-right: 5px;
+}
+
+
+input[id="cb1"]:checked + label {
+    background-color: #6593ee;
+    color:white;
+}
+input[id="cb2"]:checked + label {
+    background-color: #6593ee;
+    color:white;
+}
+input[id="cb3"]:checked + label {
+    background-color: #6593ee;
+    color:white;
+}
+input[id="cb4"]:checked + label {
+    background-color: #6593ee;
+    color:white;
+}
+input[id="cb5"]:checked + label {
+    background-color: #6593ee;
+    color:white;
+}
+input[id="low"]:checked + label {
+    background-color: #6593ee;
+    color:rgb(255, 255, 255);
+}
+input[id="middle"]:checked + label {
+    background-color: #6593ee;
+    color:rgb(255, 255, 255);
+}
+input[id="high"]:checked + label {
+    background-color: #6593ee;
+    color:rgb(255, 255, 255);
+}
+
+input[id="low"] + label {
+    outline: none;
+    user-select: none;
+    color: rgb(0, 0, 0);
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    letter-spacing: 0.04rem;
+    padding: 5px 92px;
+    cursor: pointer;
+    border-radius: 0.4rem;
+    position: relative;
+    overflow: hidden;
+    margin-right: 5px;
+    background-color: rgb(96, 230, 96);
+}
+
+input[id="middle"] + label {
+    outline: none;
+    user-select: none;
+    color: rgb(0, 0, 0);
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    letter-spacing: 0.04rem;
+    padding: 5px 92px;
+    cursor: pointer;
+    border-radius: 0.4rem;
+    position: relative;
+    overflow: hidden;
+    margin-right: 5px;
+    background-color: rgb(232, 232, 84);
+}
+
+
+input[id="high"] + label {
+    outline: none;
+    user-select: none;
+    color: rgb(0, 0, 0);
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    letter-spacing: 0.04rem;
+    padding: 5px 92px;
+    cursor: pointer;
+    border-radius: 0.4rem;
+    position: relative;
+    overflow: hidden;
+    margin-right: 5px;
+    background-color: rgb(218, 13, 13);
+}
+
+.register {
+    margin-left: 450px;
+    display: flex;
+    justify-content: center;
+}
+
+input[type=submit] {
+    font-size: 40px;
+    height: 80px;
+    width: 300px;
+    box-shadow:.8rem .5rem 1.4rem  #BEC5D0, -.3rem -.4rem .8rem #FBFBFB;
+    border-radius: 20px;
+    transition-duration: 0.3s;
+}
+
+input[type=checkbox]:active + label{
+    box-shadow: inset -.3rem -.1rem 1.4rem  #FBFBFB, inset .3rem .4rem .8rem #BEC5D0;
+}
+
+input[type=submit]:active {
+    margin-left: 5px;
+    margin-top: 5px;
+    box-shadow: inset -.3rem -.1rem 1.4rem  #FBFBFB, inset .3rem .4rem .8rem #BEC5D0; 
+}
+    
+input[type=submit]:hover{
+    background-color: #6593ee;
+    color: white;
+}
+
+input[type=checkbox]:hover + label{
+    background-color: #6593ee;
+    color: white;
+}
