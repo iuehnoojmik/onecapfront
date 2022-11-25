@@ -6,7 +6,22 @@
     font-weight: 400;
     text-rendering: optimizeLegibility;
     }
+    
+    h1 {
+        display: flex;
+        font-family: 'Nunito', sans-serif;
+        margin-top: 50px;
+        font-weight: 700;
+        justify-content: center;
+        font-size: 50px;
+    }
 
+    hr {
+        margin-bottom: 10px;
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+    
     /*** Table Styles **/
 
     table{
@@ -14,7 +29,7 @@
         max-width: 800px;
         margin: auto;
         table-layout: fixed;
-        margin-top: 300px;
+        margin-top: 50px;
     }
 
     .table-fill {
@@ -153,3 +168,13 @@ a {
 	font-weight: 00;
     font-size: 30px;
 }
+
+
+.tab_content {text-align:center;font-size:0;max-width:850px;margin:50px auto;}
+input[type="radio"] {display:none;} 
+input[type="radio"] + label {display:inline-block;padding:20px;background:#f5f5f5;color:#999;font-size:14px;cursor:pointer;margin-right: 50px; width: 100px; margin-left: 50px; border-radius: 20px;} 
+input[type="radio"]:checked + label {background:#999;color:#000;}
+.conbox {height:600px;margin:0 20px;display:none;text-align:left;font-size:12px;padding:20px;box-sizing:border-box;} 
+input[id="tab01"]:checked ~ .con1 {display:block;} 
+input[id="tab02"]:checked ~ .con2 {display:block;}
+input[id="tab03"]:checked ~ .con3 {display:block;}

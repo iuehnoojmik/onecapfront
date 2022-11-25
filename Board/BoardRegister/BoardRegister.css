@@ -9,7 +9,7 @@ h1 {
 
 hr {
     margin-left: 300px;
-    margin-right: 500px;
+    margin-right: 300px;
 }
 
 .app {
@@ -28,8 +28,7 @@ input {
     border: 0px;
 }
 .task {
-   margin-left: 450px;
-    
+    margin-left: 450px;
 }
 
 .score {
