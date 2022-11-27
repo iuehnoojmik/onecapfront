@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Board</title>
+	<link rel="stylesheet" href="BoardRegister.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" id="menuicon">
+    <label for="menuicon">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    <div class="sidebar">
+        <ul class="sitemap-ul">
+            <li><a href="#">Board</a></li>
+            <li><a href="#">Task</a></li>
+            <li><a href="#">Issue</a></li>
+        </ul>
+    </div>
+    <h1>Storyboard Register</h1>
+    <hr>
+    <form>
+    <div class="app">
+        <div class="task">
+            <p>Task</p>
+            <input type="text" size="100" placeholder="  할 일을 입력하시오">
+        </div>
+        <div class="score">
+            <p>Score</p>
+            <div id="cb_group">
+                <input type="checkbox" id="cb1" onclick="example_1();"><label for="cb1">1</label>
+                <input type="checkbox" id="cb2" onclick="example_2();"><label for="cb2">2</label>
+                <input type="checkbox" id="cb3" onclick="example_3();"><label for="cb3">3</label>
+                <input type="checkbox" id="cb4" onclick="example_4();"><label for="cb4">4</label>
+                <input type="checkbox" id="cb5" onclick="example_5();"><label for="cb5">5</label>
+            </div>
+        </div>
+        <div class="importance">
+            <p>Importance</p>
+            <div id="cb_group2">
+                <input type="checkbox" id="low" onclick="ex_1();"><label for="low">Low</label>
+                <input type="checkbox" id="middle" onclick="ex_2();"><label for="middle">Middle</label>
+                <input type="checkbox" id="high" onclick="ex_3();"><label for="high">High</label>
+            </div>
+        </div>
+    <hr style="margin-right: -350px; margin-top: 60px; margin-bottom: 50px;">
+    <div class="register">
+        <input type="submit" value="Register">
+    </div>
+    </form>
+    <script src="BoardRegister.js"></script>
+</body>
+</html>
