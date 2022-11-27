@@ -7,70 +7,60 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 <body>
-    <div class="prj_wrapper">
+    <div class="wrapper">
+        <br><br><br><br><br>
         <form class="prj_form">
-           <div class="prj_logo">프로젝트 등록</div> <br><br>
+            <div class="logo_wrapper">
+                <div class="prj_logo">프로젝트 등록</div> <br><br>
+            </div>
 
-           <label for="title">주제</label> 
-           <input type="text" class="title" id="title">
-           <br>
+            <hr width="70%">
 
-           <label for="description">메모</label> 
-           <input type="text" class="description" id="description"><br><br>
+            <div class="title_wrapper">
+                <label for="title" class="title">주제&nbsp;&nbsp;&nbsp;</label> 
+                <input type="text" class="title_box" id="title">
+            </div> 
+ 
+            <div class="description_wrapper">
+                <label for="description" class="description">메모&nbsp;&nbsp;&nbsp;</label> 
+                <textarea input type="text" class="description_box" id="description"></textarea><br><br>
+            </div><br><br>
+            <div class="text_wrapper">
+                <div class="invite_logo">팀원 초대</div>
+            </div>
 
-           
-           <div class="member_wrapper">
-            <div class="invite_logo">팀원 초대</div>
-            <div id="parah"></div>
-            <input type="button" class="add_user" value="+" onclick="addInput()">
-            <input type="button" class="delete_user" value="-" onclick="deleteInput();">
-           </div><br><br> 
-
-          <div class="button_group">
-            <input type="button" class="cancel_btn" value="취소" onclick="window.close()"> 
-            <input type="button" class="register_btn" value="등록" onclick="prj_register(this.form);"> 
-          </div>        
+            <div class="btn_wrapper">
+              <input type="button" class="btnAdd" value="+">
+            </div>
+            
+            <div class="member_wrapper">
+                <form class="userlist" action="" method='POST'>
+                    <div class='addInput'></div>
+                </form> 
+            </div>
+            
+            <div class="button_wrapper">
+                <input type="button" class="cancel_btn" value="취소" onclick="history.back()"> 
+                <input type="button" class="register_btn" value="등록" onclick="prj_register(this.form);"> 
+            </div>        
         </form>
      </div>
-<script>
-  var arrInput = new Array(0);
-  var arrInputValue = new Array(0);
- 
-function addInput() {
-  arrInput.push(arrInput.length);
-  arrInputValue.push("");
-  display();
-}
- 
-function display() {
-  document.getElementById('parah').innerHTML="";
-  for (intI=0;intI<arrInput.length;intI++) {
-    document.getElementById('parah').innerHTML+=createInput(arrInput[intI], arrInputValue[intI]);
-  }
-}
- 
-function saveValue(intId,strValue) {
-  arrInputValue[intId]=strValue;
-}  
- 
-function createInput(id,value) {
-  return "<input type='text' id='test "+ id +"' onChange='javascript:saveValue("+ id +",this.value)' value='"+ 
- 
-value +"'><br>";
-}
- 
-function deleteInput() {
-  if (arrInput.length > 0) { 
-     arrInput.pop(); 
-     arrInputValue.pop();
-  }
-  display(); 
-}
-  function add_user()
-  {
-    const mail = document.createElement('input');
-  }
-</script>    
+
+    <script type="text/javascript">
+        $(document).ready (function () {                
+            $('.btnAdd').click (function () {                                        
+                $('.addInput').append (
+                    '<input type="type" class="box" name="test" value="">\
+                     <button type="button" class="btnRemove">-</button><br>'                    
+                );    // input taf 추가                     
+                $('.btnRemove').on('click', function () { // 여기서 this는 '.btnRemove'
+                    $(this).prev().remove();        // .prev()로 input tag를 가리키고 remove()한다.
+                    $(this).next().remove();        // <br> 삭제
+                    $(this).remove();               // 버튼삭제
+                });
+            });                                      
+        });
+    </script>
 <script src="one.js" ></script>     
 </body>
 </html> 
