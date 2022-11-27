@@ -15,8 +15,12 @@ function login(form)
     xhr.onreadystatechange = function () {
         if (xhr.readyState === xhr.DONE) {
             if (xhr.status === 200) { 
-                window.open('Home.html');
+                var data=JSON.parse(xhr.response);
+                
+                localStorage.setItem('accessToken',data.accessToken)
+                localStorage.setItem('username',data.username)
 
+                window.open('Home.html');
             }
             else {
                 alert("아이디 또는 비밀번호를 다시 확인하시오.")
@@ -45,14 +49,20 @@ function signup(form)
     xhr.onreadystatechange = function () {
         if (xhr.readyState === xhr.DONE) {
             if (xhr.status === 200) { //연결 성공시
-                window.open('Home.html');
-                //console.log(xhr.responseText);
+                alert("가입 성공");
+                window.open('Login.html');                                                              
             }
             else {
                 alert("이미 존재하는 이메일 또는 6자리 미만 비밀번호입니다.")
-                //console.log("Error");
             }
         }
     }
     xhr.send(data); //Json형식의 data를 포함하여 요청 전송
+}
+
+
+
+function prj_register(form)
+{
+
 }

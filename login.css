@@ -44,7 +44,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .login_btn{ /*로그인 버튼*/
