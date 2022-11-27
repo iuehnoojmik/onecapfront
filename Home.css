@@ -1,0 +1,35 @@
+body{
+    margin:0;
+    color:#6a6f8c;
+    background:white;
+    font:600 16px/18px 'Open Sans',sans-serif;
+}
+
+.home_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.home_logo{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.project_box{
+    width:500px;
+    height:45px;
+    margin: 10px 0 5px 0;
+    color:black;
+    background-color: #e8f0fe;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 15px;
+}
+
+.newdiv{
+    margin:10px;
+    border: solid 1px #6a6f8c;
+}

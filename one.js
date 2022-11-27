@@ -14,9 +14,20 @@ function login(form)
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.onreadystatechange = function () {
         if (xhr.readyState === xhr.DONE) {
-            if (xhr.status === 200) { 
+            if (xhr.status === 200) {
+                // data변수에 JSON형식의 accessToken과 username 받아오기
+                // JSON.parse를 통해 js가 읽을수있는 형식으로 변환
+                var data = JSON.parse(xhr.responseText);
+                // accessToken과 username 반환
+                console.log(data.accessToken);
+                console.log(data.username);
+                // localStorage에 저장하기
+                localStorage.setItem('accessToken', data.accessToken);
+                localStorage.setItem('username', data.username);
+                // 이메일도 저장 왜 why? 바로다음에 사용해야함.
+                localStorage.setItem('email', email);
+                //페이지 이동
                 window.open('Home.html');
-
             }
             else {
                 alert("아이디 또는 비밀번호를 다시 확인하시오.")
@@ -45,8 +56,18 @@ function signup(form)
     xhr.onreadystatechange = function () {
         if (xhr.readyState === xhr.DONE) {
             if (xhr.status === 200) { //연결 성공시
-                window.open('Home.html');
-                //console.log(xhr.responseText);
+                 // data변수에 JSON형식의 accessToken과 username 받아오기
+                // JSON.parse를 통해 js가 읽을수있는 형식으로 변환
+                var data = JSON.parse(xhr.responseText);
+                // accessToken과 username 반환
+                console.log(data.accessToken);
+                console.log(data.username);
+                // localStorage에 저장하기
+                localStorage.setItem('accessToken', data.accessToken);
+                localStorage.setItem('username', data.username);
+                // 이메일도 저장 왜 why? 바로다음에 사용해야함.
+                localStorage.setItem('email', email);
+                //페이지 이동
             }
             else {
                 alert("이미 존재하는 이메일 또는 6자리 미만 비밀번호입니다.")
