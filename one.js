@@ -19,6 +19,7 @@ function login(form)
                 
                 localStorage.setItem('accessToken',data.accessToken)
                 localStorage.setItem('username',data.username)
+                localStorage.setItem('email',email)
 
                 window.open('Home.html');
             }
