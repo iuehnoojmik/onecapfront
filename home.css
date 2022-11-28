@@ -47,3 +47,36 @@ body{
     font-weight: bold;
     cursor: pointer;
 }
+
+
+#projects{ 
+    /* 프로젝트들 들어가는 칸 */
+    text-align: center;
+}
+/* project new div 감싸주는칸 */
+.newdiv{
+    position:relative;
+    color: #4a89e8;
+    border:solid 1px #6a6f8c;
+    margin-top:10px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+/* project new div 에서 프로젝트 타이틀 부분 div*/
+.title{
+    background-color: aqua;
+}
+/* project new div 에서 프로젝트 설명하는 부분 div*/
+.describe{
+    background-color: red;
+}
+
+/* project 삭제 div */
+.deletediv{
+    border: solid 1px #6a6f8c;
+    margin:10px;
+    background-color: #5a5f76;
+    height: 100px;
+    width: 100px;
+}
+
