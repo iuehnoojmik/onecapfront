@@ -98,7 +98,6 @@ function makediv(projectid,title,description){
   element.append(newdiv);
 }
 
-
 // 프로젝트 삭제
 function projectdelete(projectid){
   var xhr = new XMLHttpRequest();
