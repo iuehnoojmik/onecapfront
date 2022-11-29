@@ -41,7 +41,7 @@
             
             <div class="button_wrapper">
                 <input type="button" class="cancel_btn" value="취소" onclick="history.back()"> 
-                <input type="button" class="register_btn" value="등록" onclick="prj_register(this.form);"> 
+                <input type="button" class="register_btn" value="등록" onclick=RegisterProject()> 
             </div>        
         </form>
      </div>
@@ -50,7 +50,7 @@
         $(document).ready (function () {                
             $('.btnAdd').click (function () {                                        
                 $('.addInput').append (
-                    '<input type="type" class="box" name="test" value="">\
+                    '<input type="type" class="box" name="test" value="" class="invitationEmail">\
                      <button type="button" class="btnRemove">-</button><br>'                    
                 );    // input taf 추가                     
                 $('.btnRemove').on('click', function () { // 여기서 this는 '.btnRemove'
@@ -61,6 +61,6 @@
             });                                      
         });
     </script>
-<script src="one.js" ></script>     
+<script src="./ProjectRegister.js" ></script>     
 </body>
 </html> 
