@@ -40,15 +40,7 @@ section{
   border-bottom: 1px solid gray;
   box-sizing: border-box;
 }
-#div-middle{height:60vh; overflow-y: scroll;}
 
-#text{ 
-  text-align: center;
-  height: auto;
-  width: 60vw;
-  border-radius: 1vw;
-  margin: 1vh; 
-}
 .div-bottom{
   display: flex;
   height:20vh;
@@ -57,4 +49,37 @@ section{
   justify-content: center;
   text-align: center;
 }
+
+#text{ 
+  text-align: center;
+  height: auto;
+  width: 60vw;
+  border-radius: 1vw;
+  margin: 1vh; 
+}
+
+/* add issue버튼 */
 .addissue{float: left; margin: 10px;}
+
+
+/* 이슈가 추가되는 div */
+#div-middle{height:60vh; overflow-y: scroll;}
+
+.newDiv{
+  text-align: left;
+  margin: 20px;
+}
+
+.issueidSpan{
+  margin: 10px;
+}
+.usernameSpan{
+  background-color: aqua;
+  border: solid 2px black;
+  border-radius: 10px;
+  padding: 5px;
+}
+.issuecontentSpan{
+  background-color: coral;
+  margin: 10px;
+}
