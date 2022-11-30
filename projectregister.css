@@ -1,0 +1,166 @@
+body{
+    margin:0;
+    color:#5a5f76;
+    background:white;
+    font:600 16px/18px 'Open Sans',sans-serif;
+}
+
+.logo_wrapper{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.prj_logo{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.title_wrapper{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.title{
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.title_box{
+    width:500px;
+    height:35px;
+    margin: 10px 0 5px 0;
+    color:rgb(89, 89, 89);
+    background-color: #e7e7e7;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 20px;
+}
+
+.description_wrapper{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.description{
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.description_box{
+    overflow-x:hidden;
+    resize: none;
+    width:500px;
+    height:70px;
+    margin: 10px 0 5px 0;
+    color:rgb(89, 89, 89);
+    background-color: #e7e7e7;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 20px;
+}
+
+.text_wrapper{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.invite_logo{
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.member_wrapper{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.btn_wrapper{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.btnAdd{
+    position: relative;
+    right: 0px;
+    width:330px;
+    height:45px;
+    margin: 10px 10px 0px 0px;
+    color:#5a5f76;
+    background-color: #efefef;
+    border-radius: 50px;
+    border-style: none;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.box{ /*이메일 입력란*/
+    position: relative;
+    left: 6%;
+    width:330px;
+    height:45px;
+    margin: 10px 0 5px 0;
+    color:black;
+    background-color: #e8f0fe;
+    border-radius: 20px;
+    border-style: none;
+    font-size: 15px;
+}
+
+.btnRemove{
+    position: relative;
+    left: 7%;
+    top: 3px;
+    width:40px;
+    height:40px;
+    margin: 10px 10px 0px 0px;
+    color:white;
+    background-color: #d7d7d7;
+    border-radius: 25px;
+    border-style: none;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button_wrapper{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.cancel_btn{
+    width:100px;
+    height:45px;
+    margin: 10px 10px 5px 0;
+    color:white;
+    background-color: #b1b1b1;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.register_btn{
+    width:100px;
+    height:45px;
+    margin: 10px 0 5px 10px;
+    color:white;
+    background-color: #3485ff;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}

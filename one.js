@@ -1,4 +1,5 @@
 const $address = 'http://ec2-43-201-47-225.ap-northeast-2.compute.amazonaws.com'
+
 function login(form)
 {
     const email = document.getElementById("mail").value;
@@ -21,7 +22,8 @@ function login(form)
                 localStorage.setItem('username',data.username)
                 localStorage.setItem('email',email)
 
-                window.open('Home.html');
+                location.href='Home.html';
+               
             }
             else {
                 alert("아이디 또는 비밀번호를 다시 확인하시오.")
@@ -51,7 +53,7 @@ function signup(form)
         if (xhr.readyState === xhr.DONE) {
             if (xhr.status === 200) { //연결 성공시
                 alert("가입 성공");
-                window.open('Login.html');                                                              
+                location.href='Login.html';                                                             
             }
             else {
                 alert("이미 존재하는 이메일 또는 6자리 미만 비밀번호입니다.")
@@ -61,9 +63,3 @@ function signup(form)
     xhr.send(data); //Json형식의 data를 포함하여 요청 전송
 }
 
-
-
-function prj_register(form)
-{
-
-}
