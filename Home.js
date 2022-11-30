@@ -62,10 +62,12 @@ function makediv(projectid,title,description){
   newdiv.id = projectid;
 
   //삭제하는 div에 스타일추가
-  newdeletediv.classList.add('deletediv')
+  newdeletediv.classList.add('deletediv');
+  //const delete_wrap=document.createElement('div');
+  //delete_wrap.classList.add('newdeletediv');
   
-  const deletediv_text = document.createTextNode("delete project")
-  newdeletediv.append(deletediv_text)
+  const deletediv_text = document.createTextNode("Delete");
+  newdeletediv.append(deletediv_text);
 
   // 프로젝트 누를시 이동하는함수
   newdiv.onclick = function(){ 
@@ -87,8 +89,8 @@ function makediv(projectid,title,description){
   const newdescription_div = document.createElement('div');
   newdescription_div.classList.add('describe')
 
-  const newtitle = document.createTextNode("프로젝트 타이틀"+title);
-  const newdescription = document.createTextNode("프로젝트 설명"+description);
+  const newtitle = document.createTextNode(title);
+  const newdescription = document.createTextNode(description);
 
   newtitle_div.append(newtitle);
   newdescription_div.append(newdescription);

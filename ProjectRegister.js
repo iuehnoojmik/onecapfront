@@ -1,3 +1,4 @@
+
 //항상필요한 그주소
 const $address = 'http://ec2-43-201-47-225.ap-northeast-2.compute.amazonaws.com'
 

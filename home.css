@@ -48,35 +48,62 @@ body{
     cursor: pointer;
 }
 
+.prj_wrapper{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
 
 #projects{ 
     /* 프로젝트들 들어가는 칸 */
     text-align: center;
+    width:700px;
 }
 /* project new div 감싸주는칸 */
 .newdiv{
     position:relative;
     color: #4a89e8;
-    border:solid 1px #6a6f8c;
-    margin-top:10px;
+    border:solid 2px #ffffff;
+    margin-bottom:50px;
     margin-left: 100px;
     margin-right: 100px;
+    
 }
 /* project new div 에서 프로젝트 타이틀 부분 div*/
 .title{
-    background-color: aqua;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 23px;
+    border: solid 3px #70a1f1;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color:#86899f;
+    height: 40px;
 }
 /* project new div 에서 프로젝트 설명하는 부분 div*/
 .describe{
-    background-color: red;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: #ffffff;
+    color:#b4b6bf
 }
 
 /* project 삭제 div */
 .deletediv{
-    border: solid 1px #6a6f8c;
+    position: relative;
+    left: 82%;
+    border: solid 3px #ff0d00;
+    border-radius: 5px;
     margin:10px;
-    background-color: #5a5f76;
-    height: 100px;
-    width: 100px;
+    background-color: #ffffff;
+    color: red;
+    width: 70px;
+    height: 20px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
 }
 

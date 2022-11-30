@@ -63,9 +63,3 @@ function signup(form)
     xhr.send(data); //Json형식의 data를 포함하여 요청 전송
 }
 
-
-
-function prj_register(form)
-{
-
-}
