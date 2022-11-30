@@ -208,3 +208,19 @@ input[type="radio"]:checked + label {background:#999;color:#000;}
 input[id="tab01"]:checked ~ .con1 {display:block;} 
 input[id="tab02"]:checked ~ .con2 {display:block;}
 input[id="tab03"]:checked ~ .con3 {display:block;}
+
+.add {
+    display: flex;
+    justify-content: right;
+}
+
+.add button {
+    margin-top: 20px;
+    font-size: 30px;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    cursor: pointer;
+    border: 0px;
+}
