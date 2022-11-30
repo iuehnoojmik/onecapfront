@@ -51,7 +51,7 @@
     background:#1b1e24;
     border-bottom:4px solid #9ea7af;
     border-right: 1px solid #343a45;
-    font-size:23px;
+    font-size:18px;
     font-weight: 100;
     padding:24px;
     text-align:left;
@@ -191,15 +191,36 @@ input[type="radio"] {display:none;}
 input[type="radio"] + label {
     font-family: 'Nunito', sans-serif;
     display:inline-block;
-    padding:20px;background: rgba(0, 0, 0, 0.1);
-    color:#999;font-size:20px;cursor:pointer;
+    padding:20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background: rgba(0, 0, 0, 0.1);
+    color:#999;
+    font-size:20px;
+    cursor:pointer;
     margin-right: 50px; 
     width: 100px; 
     margin-left: 50px; 
-    border-radius: 20px;
+    border-radius: 10px;
 } 
 input[type="radio"]:checked + label {background:#999;color:#000;}
 .conbox {height:600px;margin:0 20px;display:none;text-align:left;font-size:12px;padding:20px;box-sizing:border-box;} 
 input[id="tab01"]:checked ~ .con1 {display:block;} 
 input[id="tab02"]:checked ~ .con2 {display:block;}
 input[id="tab03"]:checked ~ .con3 {display:block;}
+
+.add {
+    display: flex;
+    justify-content: right;
+}
+
+.add button {
+    margin-top: 20px;
+    font-size: 30px;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    cursor: pointer;
+    border: 0px;
+}

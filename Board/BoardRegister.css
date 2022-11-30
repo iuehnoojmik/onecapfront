@@ -114,7 +114,6 @@ input[type=checkbox]:checked + label:after {
     margin-right: 5px;
 }
 
-
 input[id="cb1"]:checked + label {
     background-color: #6593ee;
     color:white;
